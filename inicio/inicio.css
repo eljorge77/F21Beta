@@ -1,0 +1,125 @@
+.fondoPrincipal {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(../img/fondoAColorConF21.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 100%;
+}
+
+.quienesSomos {
+  width: 100vw;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.contenedorImagenQuienesSomos.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contenedorImagenQuienesSomos {
+  width: 70%;
+  height: 70%;
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.contenedorImagenQuienesSomos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Ultima parte de la pagina para el prewie catalogo */
+
+/* Estilos para los contenedores de catalogo */
+
+.contenedorDeProductos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contenedorProducto {
+  width: 28%;
+  height: 80%;
+
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
+  background-color: red;
+}
+
+.contenedorTachon {
+  background-image: url(/img/tachon.JPEG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+
+.contenedorCasco {
+  background-image: url(/img/casco.JPEG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+
+.contenedorGuantes {
+  background-image: url(/img/f21Balon.JPEG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 0.5s ease;
+}
+
+.contenedorTachon:hover {
+  background-image: url(/img/tachonesHover.png);
+  cursor: pointer;
+}
+
+.contenedorCasco:hover {
+  background-image: url(/img/cascoHover.png);
+  cursor: pointer;
+}
+
+.contenedorGuantes:hover {
+  background-image: url(/img/balonHover.png);
+  cursor: pointer;
+}
+
+.contenedorRedZone {
+  width: 100vw;
+  height: 100vh;
+}
+
+.contenedorRedZone h1 {
+  font-size: 6rem;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Scroll para varios elementos */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
